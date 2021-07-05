@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+@import "config/variables";
+@import "components/header";
+@import "components/recipe-info";
+@import "components/recipe-info__header";
+@import "components/footer";
+
+

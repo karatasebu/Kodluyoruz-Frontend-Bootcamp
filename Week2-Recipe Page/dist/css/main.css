@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
+html {
+  font-size: 10px; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 10%;
+  background: #000000;
+  color: #FFFFFF; }
+  .navbar .logo {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #FFFFFF; }
+    .navbar .logo:hover {
+      color: #f1e9e9; }
+  .navbar nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 5rem;
+    font-size: 1.6rem; }
+    .navbar nav a:hover {
+      color: #f1e9e9; }
+  .navbar .search {
+    display: flex; }
+    .navbar .search form {
+      position: relative; }
+      .navbar .search form input {
+        height: 100%;
+        width: 250px;
+        border-style: none;
+        border-radius: 2rem;
+        padding-left: 1.5rem; }
+        .navbar .search form input:focus {
+          outline: none; }
+      .navbar .search form .search-icon {
+        background-color: #FFFFFF;
+        border-style: none;
+        position: absolute;
+        top: .3rem;
+        right: 1rem;
+        cursor: pointer; }
+        .navbar .search form .search-icon svg {
+          opacity: .6; }
+    .navbar .search .settings {
+      background: #000000;
+      border-style: none;
+      margin-left: 2rem;
+      padding: .2rem;
+      cursor: pointer; }
+      .navbar .search .settings svg {
+        color: #FFFFFF; }
+
+main {
+  margin-top: 5rem;
+  display: flex; }
+  main .recipe-info {
+    position: relative;
+    width: 50%; }
+    main .recipe-info .materials {
+      padding: 1rem 0 2rem 20%;
+      color: #000000; }
+      main .recipe-info .materials p {
+        font-size: 2rem;
+        color: #504442; }
+      main .recipe-info .materials .nutritions ul {
+        font-size: 1.2rem;
+        display: flex;
+        gap: 3rem; }
+        main .recipe-info .materials .nutritions ul li {
+          list-style: none;
+          background: #F1ECEC;
+          padding: .5rem;
+          text-align: center; }
+          main .recipe-info .materials .nutritions ul li span {
+            margin-top: .3rem;
+            display: inline-block;
+            background: #FFFFFF;
+            width: 5rem; }
+      main .recipe-info .materials .utensils img {
+        padding: 1rem;
+        background: #F1ECEC;
+        width: 30%;
+        margin-right: 1.5rem; }
+      main .recipe-info .materials .how {
+        font-size: 1.6rem; }
+        main .recipe-info .materials .how ol li {
+          margin-bottom: 1.5rem; }
+  main .ingredients-container {
+    margin-left: 10rem; }
+    main .ingredients-container img {
+      width: 50rem; }
+    main .ingredients-container .ingredients {
+      margin-top: 2rem;
+      padding: 2.5rem;
+      padding-top: 0;
+      background: #F1ECEC; }
+      main .ingredients-container .ingredients p {
+        font-size: 1.6rem;
+        line-height: 3rem; }
+
+h3 {
+  font-size: 2.4rem;
+  padding: 2rem 0 1rem 0; }
+
+.recipe-info header {
+  padding: 1rem 0 2rem 20%; }
+  .recipe-info header p {
+    font-size: 1rem; }
+  .recipe-info header h1 {
+    font-size: 4rem;
+    width: 70%;
+    line-height: 4.5rem;
+    margin: 2rem 0; }
+  .recipe-info header .times {
+    display: flex;
+    justify-content: space-between; }
+    .recipe-info header .times ul {
+      display: flex;
+      gap: 5rem;
+      list-style: none; }
+      .recipe-info header .times ul span {
+        color: #000000; }
+    .recipe-info header .times .share-icons button {
+      background: #FFFFFF;
+      cursor: pointer;
+      border-style: none; }
+      .recipe-info header .times .share-icons button svg {
+        margin-right: 2rem; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10% 3rem 10%;
+  margin: auto;
+  margin-top: 3rem;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 1.6rem; }
+  footer .links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 2rem;
+    line-height: 4rem; }
+    footer .links a:hover {
+      color: #f1e9e9; }
+  footer .social-icons {
+    height: 50%;
+    transform: translateY(300%); }
+    footer .social-icons a {
+      color: #FFFFFF;
+      margin-right: 3rem; }
+      footer .social-icons a:hover {
+        color: #f1e9e9; }

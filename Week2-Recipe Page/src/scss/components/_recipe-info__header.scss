@@ -1,0 +1,36 @@
+.recipe-info {
+        header {
+            padding: 1rem 0 2rem 20%;
+            p {
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: $big-font;
+                width: 70%;
+                line-height: 4.5rem;
+                margin: 2rem 0;
+            }
+            .times {
+                display: flex;
+                justify-content: space-between;
+                ul {
+                    display: flex;
+                    gap: 5rem;
+                    list-style: none;
+                    span {
+                        color: $color-black;
+                    }
+                }
+                .share-icons {
+                    button {
+                        background: $color-white;
+                        cursor: pointer;
+                        border-style: none;
+                        svg {
+                            margin-right: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }

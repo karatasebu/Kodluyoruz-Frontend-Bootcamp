@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10% 3rem 10%;
+    margin: auto;
+    margin-top: 3rem;
+    background-color: $color-black;
+    color: $color-white;
+    font-size: $small-font;
+    .links {
+        a {
+            color: $color-white;
+            text-decoration: none;
+            margin-right: 2rem;
+            line-height: 4rem;
+            &:hover {
+                color: $color-darkgrey;
+            }
+        }
+    }
+    .social-icons {
+        height: 50%;
+        transform: translateY(300%);
+        a {
+            color: $color-white;
+            margin-right: 3rem;
+            &:hover {
+                color: $color-darkgrey;
+            }
+        }
+    }
+}
