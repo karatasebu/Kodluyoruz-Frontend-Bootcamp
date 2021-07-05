@@ -1,0 +1,68 @@
+.hero {
+    margin: 50px 0;
+
+    &__content {
+        @include mq(mid-tablet, max) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            order: 2;
+          }
+    }
+
+    &__header {
+        @include font-size(50);
+        font-weight: $mid-font;
+        color: $header-color;
+        margin: 20px 0;
+
+        @include mq(mid-tablet, max) {
+            @include font-size(40);
+        }
+
+        &--logo {
+            font-weight: $bold-font;
+        }
+    }
+
+    &__text {
+        @include font-size(16);
+        font-weight: $light-font;
+        color: $text-color;
+
+        &--logo {
+            font-weight: $mid-font;
+        }
+    }
+
+    &__btn {
+        width: 250px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: $main-color;
+        color: $white-color;
+        border-style: none;
+        cursor: pointer;
+        @include font-size(16);
+        font-weight: $bold-font;
+        margin-top: 50px;
+        box-shadow: 0px 30px 54px -5px rgba(245, 56, 56, 0.35);
+
+        &:hover {
+            transform: scale(.98);
+        }
+    }
+
+    &__img {
+        width: 100%;
+        @include mq(mid-tablet, max) {
+            order: 1;
+          }
+
+        &-main {
+            width: 100%;
+        }
+    }
+
+}

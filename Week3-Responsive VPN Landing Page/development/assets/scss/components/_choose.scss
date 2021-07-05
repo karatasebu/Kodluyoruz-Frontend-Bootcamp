@@ -1,0 +1,81 @@
+
+.plan{
+    
+	border: 2px solid #DDDDDD;
+	border-radius:10px ;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 50px;
+	width: 330px;
+
+	@include mq(mid-tablet, max) {
+		margin: 0;
+	}
+
+	&:hover {
+		border: 2px solid $main-color;
+	}
+
+	&__select{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+			@include mq(mid-tablet, max) {
+				flex-direction: column;
+				align-items: center;
+				gap: 30px;
+			}
+	}
+	&__current{
+			text-align: center;
+			padding-top: 97.84px;
+			padding-bottom: 30px;
+	}
+	&__list{
+			list-style-type: none;
+	}
+	&__role-item{
+			display: flex;
+			margin-bottom: 25px;
+	}
+	&__role{
+			list-style-type: none;  
+					 
+	}
+	
+	&__campaign{
+			text-align: center;
+			display: flex;
+			justify-content: center;  
+			margin-bottom: 50px;
+			
+	}
+}
+.btn{
+	&__select{
+			border-radius: 50px;
+			width: 177.88px;
+			height: 45px;
+			border: 2px solid $main-color;
+			color: $main-color;
+			background-color:$white-color ;
+
+		&:hover {
+			background-color: $main-color;
+			color: $white-color;
+		}
+	}
+}
+.span{
+	margin-left: 15px;
+}
+.plan-header{
+	text-align: center;
+	padding-top:20px ;
+	margin-bottom: 70px;
+	
+	
+}

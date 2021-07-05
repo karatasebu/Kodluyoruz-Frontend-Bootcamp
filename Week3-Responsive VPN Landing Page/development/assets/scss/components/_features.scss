@@ -1,0 +1,36 @@
+.text {
+	&__header {
+		@include font-size(35);
+		font-weight: $bold-font;
+		color: $header-color;
+		margin: 20px 0;
+
+		@include mq(mid-tablet, max) {
+			text-align: center;
+		}
+	}
+
+	&__image {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-self: center;
+	}
+
+	&__section {
+		flex-wrap: wrap;
+		align-items: flex-end;
+		justify-content: flex-end;
+		max-width: 420px;
+	}
+
+	&__list {
+		list-style-type: none;
+		margin-top: 20px;
+		display: flex;
+	}
+
+	&__span {
+		margin-left: 10px;
+	}
+}

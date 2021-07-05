@@ -1,0 +1,56 @@
+.stats {
+    margin-top: 100px;
+    
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mq(mid-tablet, max) {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+        height: 55px;
+        background-color: $icon-bgcolor;
+        border-radius: 50%;
+        margin-right: 36.5px;
+    }
+
+    &__line {
+        width: 2px;
+        height: 125.57px;
+        background-color: $line-color;
+
+        @include mq(mid-tablet, max) {
+            align-self: center;
+            width: 100%;
+            height: 2px;
+        }
+
+    }
+
+    &__number {
+        @include font-size(25);
+        font-weight: $bold-font;
+        margin: 2.5px 0;
+        color: $header-color;
+
+        @include mq(mid-tablet,max) {
+            text-align: end;
+        }
+    }
+
+    &__text {
+        @include font-size(20);
+        font-weight: $mid-font;
+        margin: 2.5px 0;
+        color: $text-color;
+    }
+}

@@ -1,0 +1,64 @@
+.head {
+    
+
+    &__section {
+        max-width: 555px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    &__section-map {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__first {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 35px;
+        align-self: center;
+        max-width: 380px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    &__images {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @include mq(mid-tablet, max) {
+            flex-direction: column;
+          }
+    }
+
+    &__image__self {
+        margin:20px;
+    }
+
+    &__parag {
+        margin-top: 20px;
+        align-self: center;
+        text-align: center;
+        flex-wrap: wrap;
+        font-size: 20px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+

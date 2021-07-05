@@ -1,0 +1,112 @@
+.footer {
+    background: $footer-color;
+    padding-top: 190px;
+    padding-bottom: 50px;
+
+    @include mq(mid-tablet, max) {
+        padding-top: 50px;
+    }
+
+    &__info {
+        @include mq(mid-tablet, max) {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__services {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @include mq(mid-tablet, max) {
+            width: 100%;
+            margin-top: 50px;
+            gap: 30px;  
+            flex-wrap: wrap;
+          }
+    }
+
+    &__links {
+        @include font-size(16);
+        font-weight: $light-font;
+        padding: 0;
+        color: $text-color;
+
+        &-item {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__header {
+        @include font-size(18);
+        font-weight: $mid-font;
+        color: $header-color;
+        margin-top: 10px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $text-color;
+
+        &--logo {
+            color: $header-color;
+            font-weight: $mid-font;
+            margin-left: 10px;
+        }
+
+        &--bold {
+            font-weight: $bold-font;
+        }
+    }
+
+    &__text {
+        margin-top: 20px;
+        max-width: 340px;
+        color: $text-color;
+        @include font-size(16);
+        font-weight: $light-font;
+
+        &--logo {
+            font-weight: $mid-font;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 30px;
+
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            margin-right: 20px;
+            background-color: $white-color;
+            border-radius: 50%;
+            box-shadow: 0px 10px 14px 0px rgba(13, 16, 37, 0.16);
+        }
+    }
+
+    &__copyright {
+        margin-top: 30px;
+        @include font-size(16);
+        font-weight: $light-font;
+        color: #AFB5C0;
+    }
+
+}

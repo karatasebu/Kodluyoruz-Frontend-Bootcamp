@@ -1,0 +1,120 @@
+.customer{
+    
+    &__header{
+        font-weight: 500;
+        text-align: center;
+        color: $customer-header-color;
+        max-width: 555px;
+        font-size: 35px;
+
+       
+    }
+    &__description{
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        max-width: 630px;
+        @include mq(desktop){
+            font-size: 16px;
+        }
+
+    }
+    &__card-group{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        @include mq(mid-tablet, max) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    &__card{
+        border: 2px solid #DDDDDD;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 10px;
+        &:hover{
+            border: 2px solid #F53838;
+        }
+        &-header{
+            display: flex;
+            flex-direction: row;
+            
+            &-title{
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                h4{
+                    margin: 0;
+                }
+            }
+            &-stats{
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                &-icon{
+                    margin-left: 3px;
+                }
+            }
+            &-img{
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+            }
+        }
+       
+    }
+
+    &__buttons {
+        width: 100%;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    &__dots {
+        height: 15px;
+        width: 15px;
+        background-color: #DDE0E4;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &__arrows {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 60px;
+        background-color: $white-color;
+        border-style: none;
+        border: 1px solid $main-color;
+        border-radius: 50%;
+        margin-left: 20px;
+        cursor: pointer;
+
+        &--right {
+            transform: rotate(90deg);
+        }
+    }
+
+}

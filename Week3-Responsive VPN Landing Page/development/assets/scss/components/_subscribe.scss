@@ -1,0 +1,44 @@
+.subscribe {
+    transform: translateY(50%);
+
+    @include mq(mid-tablet, max) {
+        transform: none;
+    }
+
+    &__content {
+        max-width: 370px;
+        text-align: center;
+    }
+
+    &__header {
+        @include font-size(35);
+        font-weight: $mid-font;
+        color: $header-color;
+        margin: 0;
+    }
+
+    &__text {
+        @include font-size(16);
+        font-weight: $light-font;
+        color: $text-color;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    &__btn {
+        width: 250px;
+        height: 60px;
+        color: $white-color;
+        background-color: $main-color;
+        border-style: none;
+        border-radius: 10px;
+        @include font-size(16);
+        font-weight: $bold-font;
+        box-shadow: 0px 30px 54px -5px rgba(245, 56, 56, 0.35);
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(.98);
+        }
+    }
+}
