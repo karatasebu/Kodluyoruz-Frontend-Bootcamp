@@ -1,0 +1,38 @@
+.group {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 330px;
+	height: 350px;
+	text-align: center;
+	padding: 20px;
+	cursor: pointer;
+	border-radius: 10px;
+
+	&.is-flipped {
+		.group__assistant,
+		.group__members {
+			display: block;
+		}
+		.group__name {
+			display: none;
+		}
+	}
+
+	&__assistant {
+		display: none;
+		margin: 0;
+		@include font-size(20);
+	}
+
+	&__members {
+		padding: 0;
+		display: none;
+	}
+
+	&__item {
+		list-style: none;
+		@include font-size(16);
+	}
+}
