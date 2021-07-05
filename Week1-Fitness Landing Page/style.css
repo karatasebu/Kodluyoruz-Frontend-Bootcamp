@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    margin-right: 30px;
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-ethereum {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.logo {
+    margin:0 50px 0 20px;
+    font-size: 5rem;
+   
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-search {
+    margin-left: 20px;
+    font-size: 1.6rem;
+}
+
+.fa-search:hover {
+    cursor: pointer;
+}
+
+figure {
+    height: 600px;
+    margin-top: 20px;
+    position: relative;
+}
+
+figure::before {
+    content: "";
+    background-image: url(https://media.istockphoto.com/vectors/gray-linear-abstract-background-for-your-design-vector-vector-id1175781029?k=6&m=1175781029&s=612x612&w=0&h=hCe27wrydDvY7E-pmBcn6K43Pt7C1Jj8Gmm1EfcGJL0=);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.main-img {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 60%;
+    height: 120%;
+}
+
+.small-img {
+    position: absolute;
+    width: 25%;
+    top: 550px;
+}
+
+figcaption {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+figcaption .small-header{
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+figcaption h2 {
+    font-size: 6rem;
+    transform: scale(1, 1.5);
+    line-height: 6rem;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+figcaption .date {
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+aside {
+    position: absolute;
+    width: 200px;
+    font-size: 2rem;
+    margin-top: 220px;
+    left: 180px;
+    text-align: justify;
+}
+
+aside hr {
+    margin: 1rem 0;
+}
+
+aside i {
+    margin-right: 20px;
+    color: black;
+}
+
+.fa-plus-circle {
+    position: absolute;
+    left: 180px;
+    bottom: 48px;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.icons {
+    display: flex;
+    position: absolute;
+    left: 115px;
+    bottom: 3px;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+section {
+    font-size: 2rem;
+    width: 40%;
+    margin: auto ;
+    margin-top: 220px;
+    line-height: 2.8rem;
+}
+
+.first-letter {
+  float: left;
+  font-size: 9.5rem;
+  line-height: 6rem;
+  padding: 1rem .8rem 0 .3rem;
+}
+
+.rope-img {
+    margin: 50px 0 50px -60px;
+    width: 120%;
+}
+
+.card-article {
+    position: relative;
+    padding: 30px 30px;
+    margin-bottom: 40px;
+}
+
+.card-article::before {
+    content: "";
+    background-image: url(https://media.istockphoto.com/vectors/gray-linear-abstract-background-for-your-design-vector-vector-id1175781029?k=6&m=1175781029&s=612x612&w=0&h=hCe27wrydDvY7E-pmBcn6K43Pt7C1Jj8Gmm1EfcGJL0=);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.card-article p {
+    margin-bottom: 1rem;
+}
+
+.card-article .card-content {
+    margin-top: 3rem;
+}
+
+.workout {
+    position: relative;
+    margin-top: 70px;
+}
+
+.number {
+    display: inline-block;
+    position: absolute;
+    left: -80px;
+    top: -15px;
+    padding: 15px 25px;
+    border-radius: 50%;
+    border: 1px solid rgb(196, 190, 190);
+    color: orangered;
+}
+
+.workout h3 {
+    font-size: 3.5rem;
+}
+
+.workout p {
+    margin-top: 30px;
+}
+
+.workout iframe {
+    margin-top: 30px;
+}
+
+.btn {
+    width: 640px;
+    margin-top: 30px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid rgb(196, 190, 190);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.read-now {
+    position: relative;
+    width: 640px;
+    height: 360px;
+    background-image: url(https://images.unsplash.com/photo-1592580715317-19adca36288e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    margin-top: 30px;
+}
+
+.read-now p {
+    color: #fff;
+    width: 400px;
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+}
+
+.read-now span {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #fff;
+}
+
+.read-now span:hover {
+    cursor: pointer;
+}
+
+.read-now span i {
+    font-size: 1.5rem;
+}
+
+.others {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other {
+    margin-right: 50px;
+}
+
+.other img {
+    width: 160px;
+}
+
+.other .author {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: .5rem;
+}
+
+.other .header {
+    width: 150px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 3.5rem;
+    transform: scaleY(1.5);
+}
+
+.others h5 {
+    position: absolute;
+    top: 30px;
+    left: 340px;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: #262626;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.link a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+    line-height: 3rem;
+}
+
+.link strong {
+    margin-bottom: 1rem;
+}
+
+.social-media {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 2rem;
+}
+
+footer hr {
+    height: .5px;
+    width: 850px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 60px;
+    left: 265px;
+}
+
+footer .footer-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 5rem;
+    position: absolute;
+    right: 230px;
+    bottom: 40px;
+}
+
+footer p {
+    position: absolute;
+    left: 265px;
+    bottom: 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
