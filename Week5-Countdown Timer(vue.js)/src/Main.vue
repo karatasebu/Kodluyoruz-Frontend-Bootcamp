@@ -31,45 +31,17 @@
       </button>
     </div>
   </main>
-  <h1>{{ user }}</h1>
-  <form @submit.prevent="update">
-    <input type="text" placeholder="Name" v-model="name" />
-    <br />
-    <input type="text" placeholder="Last Name" v-model="lastname" />
-    <br />
-    <button type="submit">Guncelle</button>
-  </form>
 </template>
 
 <script>
-var firebaseConfig = {
-  apiKey: "AIzaSyCeFJSmM2XWSZHjQ8vaR59ZpZb8jDTbMks",
-  authDomain: "front-end-93.firebaseapp.com",
-  projectId: "front-end-93",
-  storageBucket: "front-end-93.appspot.com",
-  messagingSenderId: "237484382969",
-  appId: "1:237484382969:web:ddf2e661e0321cce5ea028",
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-import { reactive, ref } from "vue";
-
+import { reactive } from "vue";
 export default {
   setup() {
-    let user = ref({});
     let countdown = reactive({
       time: 60,
       isActive: false,
       interval: "",
     });
-
-    const db = firebase.firestore();
-    const testDB = db.collection("test");
-    testDB.doc("1").onSnapshot(async function (data) {
-      let result = data.data();
-      user.value = result;
-    });
-
     function start() {
       countdown.interval = setInterval(() => {
         countdown.time--;
@@ -77,31 +49,25 @@ export default {
       }, 1000);
       countdown.isActive = true;
     }
-
     function pause() {
       clearInterval(countdown.interval);
       countdown.isActive = false;
     }
-
     function reset() {
       clearInterval(countdown.interval);
       countdown.time = 60;
       countdown.isActive = false;
     }
-
     function increaseTime() {
       countdown.time += 5;
     }
-
     function decreaseTime() {
       if (countdown.time >= 5) {
         countdown.time -= 5;
       }
     }
-
     return {
       countdown,
-      user,
       start,
       pause,
       reset,
@@ -114,33 +80,28 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&display=swap");
-
 body,
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: aqua;
+  background: black;
   font-family: "Mulish", sans-serif;
 }
-
 .countdown {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
-
 .time {
   line-height: 550px;
   color: white;
 }
-
 .countdown {
   font-size: 550px;
   font-weight: 700;
 }
-
 .controls {
   display: flex;
   flex-direction: column;
@@ -148,7 +109,6 @@ html {
   align-items: center;
   gap: 20px;
 }
-
 .controls-btn {
   width: 100px;
   height: 40px;
@@ -157,11 +117,9 @@ html {
   cursor: pointer;
   border-radius: 20px;
 }
-
 .controls-btn:hover {
   transform: scale(1.1);
 }
-
 .adjustment {
   display: flex;
   flex-direction: column;
@@ -170,7 +128,6 @@ html {
   margin-left: 100px;
   gap: 20px;
 }
-
 .adjustment-btn {
   font-family: "Mulish", sans-serif;
   width: 50px;
@@ -182,7 +139,6 @@ html {
   background: #ffd21f;
   cursor: pointer;
 }
-
 .adjustment-btn:hover {
   transform: scale(1.1);
 }
